@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Entrenaments</string>
+
+    <string name="entrenoA">Extremitats a Tope</string>
+    <string name="descripcioA">"5 Flexions a terra\n" +
+                            "10 Inclinacions d'una cama\n" +
+                            "15 Flexions dorsals\n"
+    </string>
+
+    <string name="entrenoB">Agonia Màxima</string>
+    <string name="descripcioB">"100 Flexions inclinades\n" +
+                            "100 Flexions\n" +
+                            "100 Abdominals\n" +
+                            "100 Esquats\n"
+    </string>
+
+    <string name="entrenoC">Entrenament especial</string>
+    <string name="descripcioC">"5 Dorsals\n" +
+                            "10 Flexions\n" +
+                            "15 Esquats\n"
+    </string>
+
+    <string name="entrenoD">Força i longitud</string>
+    <string name="descripcioD">"500 Metres màxima velocitat\n" +
+                            "21 Llançaments de pes \n" +
+                            "21 Flexions\n"
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
