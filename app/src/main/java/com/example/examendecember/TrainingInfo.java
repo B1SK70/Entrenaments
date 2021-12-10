@@ -60,7 +60,6 @@ public class TrainingInfo extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-
         View view = inflater.inflate(R.layout.fragment_training_info, container, false);
         workImg = view.findViewById(R.id.workImage);
         workName = view.findViewById(R.id.workName);
@@ -88,20 +87,15 @@ public class TrainingInfo extends Fragment {
     }
 
     public void drawWork(String n) {
-
-
-        int titleId = getResources().getIdentifier("entreno" + n, "string", getActivity().getPackageName());
-        int descriptionID = getResources().getIdentifier("descripcio" + n, "string", getActivity().getPackageName());
-
-        n = n.toLowerCase(Locale.ROOT);
-        int imgId = getResources().getIdentifier(n, "drawable", getActivity().getPackageName());
-
-
-        workImg.setImageResource(imgId);
-        workName.setText(titleId);
-        workDescription.setText(descriptionID);
-
-
+        workImg.setImageResource(
+                getResources().getIdentifier( n.toLowerCase(Locale.ROOT) , "drawable", getActivity().getPackageName())
+        );
+        workName.setText(
+                getResources().getIdentifier("entreno" + n, "string", getActivity().getPackageName())
+        );
+        workDescription.setText(
+                getResources().getIdentifier("descripcio" + n, "string", getActivity().getPackageName())
+        );
     }
 
 }
